@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+.theme-one {
+  --main-bg: hsl(222, 26%, 31%);
+  --keypad-bg: hsl(223, 31%, 20%);
+  --header-bg: hsl(222, 26%, 31%);
+  --header-text: hsl(0, 0%, 100%);
+  --toogle-bg: hsl(223, 31%, 20%);
+  --toogle: hsl(6, 63%, 50%);
+  --toogle-hover: hsl(6, 63%, 60%);
+  --display-bg: hsl(224, 36%, 15%);
+  --keyNumber-bg: hsl(30, 25%, 89%);
+  --keyNumber-bg-hover: hsl(30, 25%, 95%);
+  --keyNumber-text: hsl(222, 26%, 31%);
+  --keyNumber-shadow: hsl(28, 16%, 65%);
+  --keyDelRes-bg: hsl(225, 21%, 49%);
+  --keyDelRes-bg-hover: hsl(225, 21%, 60%);
+  --keyDelRes-text: hsl(0, 0%, 100%);
+  --keyDelRes-shadow: hsl(224, 28%, 35%);
+  --result-bg: hsl(6, 63%, 50%);
+  --result-bg-hover: hsl(6, 63%, 60%);
+  --result-text: hsl(0, 0%, 100%);
+  --result-shadow: hsl(6, 70%, 34%);
+}
+
+.theme-two {
+  --main-bg: hsl(0, 0%, 90%);
+  --keypad-bg: hsl(0, 5%, 81%);
+  --header-bg: hsl(0, 0%, 90%);
+  --header-text: hsl(60, 10%, 19%);
+  --toogle-bg: hsl(0, 5%, 81%);
+  --toogle: hsl(25, 98%, 40%);
+  --toogle-hover: hsl(25, 98%, 50%);
+  --display-bg: hsl(0, 0%, 93%);
+  --keyNumber-bg: hsl(45, 7%, 89%);
+  --keyNumber-bg-hover: hsl(45, 7%, 95%);
+  --keyNumber-text: hsl(60, 10%, 19%);
+  --keyNumber-shadow: hsl(35, 11%, 61%);
+  --keyDelRes-bg: hsl(185, 42%, 37%);
+  --keyDelRes-bg-hover: hsl(185, 42%, 50%);
+  --keyDelRes-text: hsl(0, 0%, 100%);
+  --keyDelRes-shadow: hsl(224, 28%, 35%);
+  --result-bg: hsl(25, 98%, 40%);
+  --result-bg-hover: hsl(25, 98%, 50%);
+  --result-text: hsl(0, 0%, 100%);
+  --result-shadow: hsl(25, 99%, 27%);
+}
+
+.theme-three {
+  --main-bg: hsl(268, 75%, 9%);
+  --keypad-bg: hsl(268, 71%, 12%);
+  --header-bg: hsl(268, 75%, 9%);
+  --header-text: hsl(52, 100%, 62%);
+  --toogle-bg: hsl(268, 71%, 12%);
+  --toogle: hsl(176, 100%, 44%);
+  --toogle-hover: hsl(176, 100%, 55%);
+  --display-bg: hsl(268, 71%, 12%);
+  --keyNumber-bg: hsl(268, 47%, 21%);
+  --keyNumber-bg-hover: hsl(268, 47%, 30%);
+  --keyNumber-text: hsl(52, 100%, 62%);
+  --keyNumber-shadow: hsl(290, 70%, 36%);
+  --keyDelRes-bg: hsl(281, 89%, 26%);
+  --keyDelRes-bg-hover: hsl(281, 89%, 35%);
+  --keyDelRes-text: hsl(0, 0%, 100%);
+  --keyDelRes-shadow: hsl(285, 91%, 52%);
+  --result-bg: hsl(176, 100%, 44%);
+  --result-bg-hover: hsl(176, 100%, 55%);
+  --result-text: hsl(198, 20%, 13%);
+  --result-shadow: hsl(177, 92%, 70%);
+}
+
+/* Gaya dasar */
+body {
+  background-color: var(--main-bg);
+  font-family: "Hanken Grotesk", serif;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+#headerContent {
+  background-color: var(--header-bg);
+}
+
+#headerText {
+  color: var(--header-text);
+}
+
+#themeButton {
+  background-color: var(--toogle-bg);
+}
+
+#slider {
+  background-color: var(--toogle);
+}
+
+#slider:hover {
+  background-color: var(--toogle-hover);
+}
+
+#display {
+  background-color: var(--display-bg);
+  color: var(--header-text);
+}
+
+#keypadBackground {
+  background-color: var(--keypad-bg);
+}
+
+#keyBackground {
+  background-color: var(--keyNumber-bg);
+  color: var(--keyNumber-text);
+  box-shadow: 0 6px 0px 0 var(--keyNumber-shadow);
+}
+
+#keyBackground:hover {
+  background-color: var(--keyNumber-bg-hover);
+}
+
+#delRes {
+  background-color: var(--keyDelRes-bg);
+  color: var(--keyDelRes-text);
+  box-shadow: 0 6px 0px 0 var(--keyDelRes-shadow);
+}
+
+#delRes:hover {
+  background-color: var(--keyDelRes-bg-hover);
+}
+
+#result {
+  background-color: var(--result-bg);
+  color: var(--result-text);
+  box-shadow: 0 6px 0px 0 var(--result-shadow);
+}
+
+#result:hover {
+  background-color: var(--result-bg-hover);
+}
