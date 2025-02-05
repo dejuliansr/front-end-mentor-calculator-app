@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       const value = button.getAttribute("data-key");
 
+      if (!value) return; 
+      
       // Handle angka dan titik desimal
       if (!isNaN(value) || value === ".") {
         if (shouldResetInput || currentInput === "0") {

@@ -109,29 +109,44 @@ body {
 #keyBackground {
   background-color: var(--keyNumber-bg);
   color: var(--keyNumber-text);
-  box-shadow: 0 6px 0px 0 var(--keyNumber-shadow);
+  box-shadow: 0 8px var(--keyNumber-shadow);
 }
 
 #keyBackground:hover {
   background-color: var(--keyNumber-bg-hover);
 }
 
+#keyBackground:active {
+  box-shadow: 0 5px var(--keyNumber-shadow);
+  transform: translateY(5px);
+}
+
 #delRes {
   background-color: var(--keyDelRes-bg);
   color: var(--keyDelRes-text);
-  box-shadow: 0 6px 0px 0 var(--keyDelRes-shadow);
+  box-shadow: 0 8px var(--keyDelRes-shadow);
 }
 
 #delRes:hover {
   background-color: var(--keyDelRes-bg-hover);
 }
 
+#delRes:active {
+  box-shadow: 0 5px var(--keyDelRes-shadow);
+  transform: translateY(5px);
+}
+
 #result {
   background-color: var(--result-bg);
   color: var(--result-text);
-  box-shadow: 0 6px 0px 0 var(--result-shadow);
+  box-shadow: 0 8px 0px 0 var(--result-shadow);
 }
 
 #result:hover {
   background-color: var(--result-bg-hover);
+}
+
+#result:active {
+  box-shadow: 0 5px var(--result-shadow);
+  transform: translateY(5px);
 }
